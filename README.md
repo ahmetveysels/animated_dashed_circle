@@ -1,39 +1,50 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Animated Dashed Circle
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+With this flutter package, you can add animated dashed circle to the picture you want. Story Widget :)
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+You can use it wherever you want to use Instagram story.
+
+![Animated Dashed Circle Screenshot](https://avseng.net/animated_dashed/screenshot.png)
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+No permission is needed.
 
-## Usage
+## Usage 
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Please review the example folder
 
+Define the widget,
 ```dart
-const like = 'sample';
+    AnimatedDashedCircle().show(
+        image: const AssetImage("assets/user.jpg"),
+        autoPlay: true,
+        duration: const Duration(seconds: 5),
+        height: 250,
+        borderWidth: 5,
+    ),
 ```
+
+To stop the animation,
+```dart
+    onPressed: () => AnimatedDashedCircle().stopCircle(),
+```
+
+To run the animation once,
+![Animated Dashed Forward Gif](https://avseng.net/animated_dashed/forward.gif)
+```dart
+    onPressed: () => AnimatedDashedCircle().playCircle(),
+```
+
+To repeat the animation
+![Animated Dashed Repeat Gif](https://avseng.net/animated_dashed/repeat.gif)
+```dart
+    onPressed: () => AnimatedDashedCircle().playCircle(type: AnimatedionDashedCircleType.repeat),
+```
+
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+avseng.net

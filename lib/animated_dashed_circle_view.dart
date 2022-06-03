@@ -11,7 +11,8 @@ class AnimatedDashedCircleView extends StatefulWidget {
   final bool autoPlay;
   final double borderWidth;
   final int dashSize;
-  const AnimatedDashedCircleView({Key? key, required this.image, required this.autoPlay, this.height, this.duration, required this.borderWidth, required this.dashSize}) : super(key: key);
+  final Color color;
+  const AnimatedDashedCircleView({Key? key, required this.image, required this.autoPlay, this.height, this.duration, required this.borderWidth, required this.dashSize, required this.color}) : super(key: key);
 
   @override
   State<AnimatedDashedCircleView> createState() => _AnimatedDashedCircleViewState();
@@ -52,7 +53,7 @@ class _AnimatedDashedCircleViewState extends State<AnimatedDashedCircleView> wit
           child: DashedCircle(
             gapSize: gap!.value,
             dashes: widget.dashSize,
-            color: Colors.red,
+            color: widget.color,
             strokeWidth: widget.borderWidth,
             child: RotationTransition(
               turns: reverse!,
