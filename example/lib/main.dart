@@ -44,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             AnimatedDashedCircle().show(
               image: const AssetImage("assets/user.jpg"),
               autoPlay: true,
+              contentPadding: 0,
               duration: const Duration(seconds: 5),
               height: 250,
               borderWidth: 5,

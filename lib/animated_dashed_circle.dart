@@ -21,7 +21,15 @@ class AnimatedDashedCircle {
     circleController?.reset();
   }
 
-  Widget show({required ImageProvider<Object> image, double? height, Duration? duration, bool? autoPlay, double? borderWidth, int? dashSize, Color color = Colors.red}) {
+  Widget show(
+      {required ImageProvider<Object> image,
+      double? height,
+      Duration? duration,
+      bool? autoPlay,
+      double? borderWidth,
+      int? dashSize,
+      Color color = Colors.red,
+      double? contentPadding}) {
     return AnimatedDashedCircleView(
       image: image,
       duration: duration,
@@ -29,7 +37,7 @@ class AnimatedDashedCircle {
       autoPlay: autoPlay ?? true,
       borderWidth: borderWidth ?? 3,
       dashSize: dashSize ?? 20,
-      color: color,
+      color: color,contentPadding: contentPadding,
     );
   }
 }
