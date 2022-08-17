@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        primaryColor: Colors.pink,
       ),
       home: const MyHomePage(title: 'Animated Dashed Circle'),
     );
@@ -22,7 +23,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
-
   final String title;
 
   @override
@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             AnimatedDashedCircle().show(
               image: const AssetImage("assets/user.jpg"),
               autoPlay: true,
-              contentPadding: 0,
+              contentPadding: 04,
               duration: const Duration(seconds: 5),
               height: 250,
               borderWidth: 5,

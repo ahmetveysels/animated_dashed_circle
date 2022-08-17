@@ -1,11 +1,16 @@
-## [0.0.3] new
+## [0.0.4]
 
-* ContentPadding id added
+- Content color added
+- default bg color optimized 
+
+## [0.0.3]
+
+- ContentPadding id added
 
 ## [0.0.2]
 
-* Customizable dash color added
+- Customizable dash color added
 
 ## [0.0.1]
 
-* TODO: First initial beta.
+- TODO: First initial beta.

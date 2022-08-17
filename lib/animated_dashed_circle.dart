@@ -29,15 +29,19 @@ class AnimatedDashedCircle {
       double? borderWidth,
       int? dashSize,
       Color color = Colors.red,
-      double? contentPadding}) {
+      double? contentPadding,
+      Color? contentColor,
+      Color? imageBgColor}) {
     return AnimatedDashedCircleView(
-      image: image,
-      duration: duration,
-      height: height,
-      autoPlay: autoPlay ?? true,
-      borderWidth: borderWidth ?? 3,
-      dashSize: dashSize ?? 20,
-      color: color,contentPadding: contentPadding,
-    );
+        image: image,
+        duration: duration,
+        height: height,
+        autoPlay: autoPlay ?? true,
+        borderWidth: borderWidth ?? 3,
+        dashSize: dashSize ?? 20,
+        color: color,
+        contentPadding: contentPadding,
+        contentColor: contentColor,
+        imageBgColor: imageBgColor);
   }
 }

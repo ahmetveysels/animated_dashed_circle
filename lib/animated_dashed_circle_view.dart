@@ -13,6 +13,8 @@ class AnimatedDashedCircleView extends StatefulWidget {
   final int dashSize;
   final Color color;
   final double? contentPadding;
+  final Color? contentColor;
+  final Color? imageBgColor;
   const AnimatedDashedCircleView(
       {Key? key,
       required this.image,
@@ -21,6 +23,8 @@ class AnimatedDashedCircleView extends StatefulWidget {
       this.duration,
       required this.borderWidth,
       required this.dashSize,
+      this.contentColor,
+      this.imageBgColor,
       required this.color,
       this.contentPadding})
       : super(key: key);
@@ -70,11 +74,12 @@ class _AnimatedDashedCircleViewState extends State<AnimatedDashedCircleView> wit
               turns: reverse!,
               child: CircleAvatar(
                 radius: size,
-                backgroundColor: Colors.white,
+                backgroundColor: widget.contentColor ?? Colors.white,
                 // burda o bordur kalınlaşacak
                 child: Padding(
                   padding: EdgeInsets.all(widget.contentPadding ?? 3),
                   child: CircleAvatar(
+                    backgroundColor: widget.imageBgColor ?? Theme.of(context).primaryColor,
                     radius: size,
                     backgroundImage: widget.image,
                   ),
