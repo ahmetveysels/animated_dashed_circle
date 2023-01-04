@@ -6,7 +6,7 @@ With this flutter package, you can add animated dashed circle to the picture you
 
 You can use it wherever you want to use Instagram story.
 
-![Animated Dashed Circle Screenshot](https://avseng.net/animated_dashed/screenshot.png)
+![Animated Dashed Circle Screenshot](https://ahmetveysel.com/animated_dashed/screenshot.png)
 
 ## Getting started
 
@@ -33,13 +33,13 @@ To stop the animation,
 ```
 
 To run the animation once,
-![Animated Dashed Forward Gif](https://avseng.net/animated_dashed/forward.gif)
+![Animated Dashed Forward Gif](https://ahmetveysel.com/animated_dashed/forward.gif)
 ```dart
     onPressed: () => AnimatedDashedCircle().playCircle(),
 ```
 
 To repeat the animation
-![Animated Dashed Repeat Gif](https://avseng.net/animated_dashed/repeat.gif)
+![Animated Dashed Repeat Gif](https://ahmetveysel.com/animated_dashed/repeat.gif)
 ```dart
     onPressed: () => AnimatedDashedCircle().playCircle(type: AnimatedionDashedCircleType.repeat),
 ```
@@ -47,4 +47,4 @@ To repeat the animation
 
 ## Additional information
 
-avseng.net
+ahmetveysel.com
