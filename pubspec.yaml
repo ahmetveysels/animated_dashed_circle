@@ -1,9 +1,9 @@
 name: animated_dashed_circle
 description: Animated Dashed Circle. If you want to make instagram stories, you can use this package.
-version: 0.0.4
-homepage: https://github.com/avdisx/
-repository: https://github.com/avdisx/animated_dashed_circle/
-documentation: https://github.com/avdisx/animated_dashed_circle/
+version: 0.0.5
+homepage: https://github.com/ahmetveysels/
+repository: https://github.com/ahmetveysels/animated_dashed_circle/
+documentation: https://github.com/ahmetveysels/animated_dashed_circle/
 
 environment:
   sdk: ">=2.17.1 <3.0.0"

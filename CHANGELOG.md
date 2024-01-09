@@ -1,3 +1,6 @@
+## [0.0.5]
+ - Update ReadMe
+
 ## [0.0.4]
 
 - Content color added
